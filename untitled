@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+    int l,i;
+    char s[50],t[50];
+    printf("enter the inner voice of your heart");
+    scanf("%s",s);
+    printf("your heart says\n");
+    l=strlen(s);
+    for(i=0;i<l;i++)
+    {
+        t[i]=s[i]+32;
+    }
+    t[l]='\0';
+    printf("%s",t);
+}
